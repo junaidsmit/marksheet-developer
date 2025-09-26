@@ -2,7 +2,7 @@
 var username = prompt("Enter Your Name");
 if (!isNaN(username)) { alert("Please , Your Name"); }
 else {
-    var clas = +prompt("Enter Your class");
+    var clas = +prompt("Enter Your class (9-12)");
     if (isNaN(clas)) { alert("Enter correct class"); }
     else {
         if (clas > 12) { alert("Make Your Own Marksheet") }
@@ -38,14 +38,15 @@ else {
                                         if (subThree > 100 || subThree < 0) { alert("It is incorrect Value        " + subThree + "\n\ns Enter Marks  0 - 100") }
                                         else {
                                             var totMark = subOne + subTwo + subThree
-                                            var percentage = totMark / 300 * 100
+                                            var percentage = parseInt(totMark / 300 * 100)
                                             if (percentage < 33) { var grade = "Fail" }
+                                            if (percentage < 50 && percentage >= 33) { var grade = "D" }
                                             if (percentage < 60 && percentage >= 50) { var grade = "C" }
                                             if (percentage < 70 && percentage >= 60) { var grade = "B" }
                                             if (percentage < 80 && percentage >= 70) { var grade = "A" }
                                             if (percentage < 90 && percentage >= 80) { var grade = "A-One" }
                                             if (percentage < 100 && percentage >= 90) { var grade = "A-One +" }
-                                            if (percentage >= 100) { var grade = "You are Genius  " }
+                                            if (percentage >= 100) { var grade = "pro A-One + " }
                                             document.writeln(`
  <table class="  table table-info table-hover table-bordered fs-4 "  >
  <h3 class="bg-info  text-center">Marksheet</h3>
