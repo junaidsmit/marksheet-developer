@@ -47,63 +47,78 @@ else {
                                             if (percentage < 90 && percentage >= 80) { var grade = "A-One" }
                                             if (percentage < 100 && percentage >= 90) { var grade = "A-One +" }
                                             if (percentage >= 100) { var grade = "pro A-One + " }
-                                            document.writeln(`
- <table class="  table table-info table-hover table-bordered fs-4 "  >
- <h3 class="bg-info  text-center">Marksheet</h3>
-    <h3 class="bg-info theme-light text-center">Board of Intermediate & Secondary Education</h3>
-  <thead>
-  </thead>
-  <tbody>
-      <tr>
-       <td class="text-center" style="width: 80px;">Name</td>
-       <td class="text-center" style="width: 80px;">${username}</td>
-       <td class="text-center" style="width: 80px;">Class</td>
-       <td class="text-center" style="width: 80px;">${clas}</td>
-       <td class="text-center" style="width: 80px;">Roll No</td>
-       <td class="text-center" style="width: 80px;" >${rollNo}</td>
-       </tr>
-       <tr style="height:5vh;"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-    <tr >
-    <td></td>
-    <td class="text-center" >Subjects</td>
-    <td class="text-center">Marks</td>
-    <td class="text-center" colspan="2">Progress</td>
-    <td></td>
-    
-    </tr>
-    <tr><td></td>
-       <td class="text-center">${sub1}</td>
-       <td class="text-center">${subOne}</td>
-       <td class="">Total Marks</td>
-       <td class="text-center">300</td>
-       <td></td>
-    </tr>
-    <tr><td></td>
-       <td class="text-center">${sub2}</td>
-       <td class="text-center">${subTwo}</td>
-       <td>Obtained Marks</td>
-       <td class="text-center">${totMark}</td>
-       <td></td>
-    </tr>
-    <tr><td></td>
-       <td class="text-center">${sub3}</td>
-       <td class="text-center">${subThree}</td>
-       <td>Percentage</td>
-       <td class="text-center">${percentage} %</td>
-       <td></td>
-    </tr>
-    <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-       <td >Grade</td>
-       <td class="text-center">${grade}</td>
-       <td></td>
-    </tr>
-    <tr>
-    </tr>
-  </tbody>
-</table>`)
+                                            document.writeln(
+                         `
+                         
+      <table class="table table-info table-hover table-bordered ">
+         <h3 class="bg-info text-center">Marksheet</h3>
+         <h3 class="bg-info text-center">Board of Intermediate & Secondary Education</h3>
+         <thead>
+            <tr>
+               <td class="s1">Name</td>
+               <td>${username}</td>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               
+               <td class="s1">Class</td>
+               <td>${clas}</td>
+            </tr>
+            <tr>
+               
+               <td class="s1">Roll No</td>
+               <td>${rollNo}</td>
+            </tr>
+            <tr>     
+            <td colspan="2"></td>
+            </tr>
+            <tr>
+               
+               <td class="s1">Subjects</td>
+               <td>Marks</td>
+            </tr>
+            <tr>
+               
+               <td class="s1">${sub1}</td>
+               <td>${subOne}</td>
+            </tr>
+            <tr>
+               
+               <td class="s1">${sub2}</td>
+               <td>${subTwo}</td>
+            </tr>
+            <tr>
+               
+               <td class="s1">${sub3}</td>
+               <td>${subThree}</td>
+            </tr>
+            <tr>     
+            <td colspan="2"></td>
+            </tr>
+            <tr>
+               
+               <td class="s1">Total Marks</td>
+               <td>300</td>
+            </tr>
+            <tr>
+               
+               <td class="s1">Obtained Marks</td>
+               <td>${totMark}</td>
+            </tr>
+            <tr>
+               
+               <td class="s1">Percentage</td>
+               <td>${percentage} %</td>
+            </tr>
+            <tr>
+               
+               <td class="s1">Grade</td>
+               <td>${grade}</td>
+            </tr>
+         </tbody>
+      </table>`
+ )
 
                                         }
                                     }
@@ -143,10 +158,6 @@ else {
 // document.writeln("Obtained Marks......"+totMark)
 // document.writeln("Percentage.........."+parseInt(percentage)+"%")
 // document.writeln("Grade..............."+grade)
-
-
-
-
 
 
 
