@@ -8,17 +8,20 @@
         <style>
             *{margin:0;
             padding:0;}
-        td{border: 2px solid black; height: 10vh;}
-        .lh{line-height: 0px;}
+        td{line-height: 5vh;}
+        .tb{border: 2px solid black;}
+        .lh{line-height: 1vh !important;}
         p{width: 100%;}
         .w-1{width:1%;}
+        .w-5{width:5%;}
         .w-8{width:8%;}
         .w-10{width:10%;}
         .w-12{width:12%;}
-        .w-30{width:30%;}
-        .ml-10 {margin-left:10%;}
+        .w-35{width:35%;}
+        .w-60{width:60%;}
+        .ms-10 {margin-left:10%;}
         .mt-10 {margin-top:10%;}
-        .logsign{margin:30% 0 0 110px;}
+        .logsign{margin:30% 0 0 10px;}
         
       
         
@@ -26,6 +29,161 @@
         </style>
 </head>
 <body>
+
+
+<div class="container border border-primary">
+        <div class="row mt-10">
+             <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 mb-5">
+                                
+ <div class="row">
+                         <div class="col col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                            <img class="img-fluid h-100" src="./logo-university.jpeg" alt="Logo">
+                         </div>
+
+                         <div class="col col-lg-8 col-md-8 col-sm-8 col-xs-8 col-8">
+                             <div class="text-center">
+                             <h5>SINDH UNIVERSITY OF</h5>
+                             <h5>TECHNOLOGY AND MANAGEMENT</h5>
+                             <h5>Report Card</h5>
+                             </div>
+                         </div>
+                          <div class="col col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                              <img class="img-fluid h-100" src="./logo-student.png" alt="Student Pic">
+                         </div>
+  </div>
+
+ <div class="row mt-5">
+
+         <div class="col col-lg-3 col-md-3 col-sm-12 col-xs-12 col-12 ms-10">
+         <table>
+                <tr class="mb-5">
+                    <td class="w-35">Name</td>
+                    <td class="w-1"> : </td>
+                    <td class="w-50 border-bottom border-dark fw-bold">${sname}</td>
+                </tr>
+                <tr>
+                    <td>Father's Name</td>
+                    <td>:</td>
+                    <td class="border-bottom border-dark fw-bold">${fname}</td>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td>:</td>
+                    <td class="border-bottom border-dark fw-bold">${clas}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-sm-12 col-xs-12 col-12"></div>
+
+        <div class="col col-lg-3 col-md-3 col-sm-12 col-xs-12 col-12 ms-10">
+         <table>
+                <tr>
+                    <td class="w-35">Roll No</td>
+                    <td class="w-1">:</td>
+                    <td class="w-50 border-bottom border-dark fw-bold">${rollNo}</td>
+                </tr>
+                <tr>
+                    <td>Group</td>
+                    <td>:</td>
+                    <td class="border-bottom border-dark fw-bold">${group}</td>
+                </tr>
+                <tr>
+                    <td>Attempt</td>
+                    <td>:</td>
+                    <td class="border-bottom border-dark fw-bold">${attempt}</td>
+                </tr>
+        </table>
+        </div>
+ </div>
+
+
+ 
+ <!-- <div class="row mt-5">
+     <div class="col col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                <table class="m-auto">
+                  <tr>
+                    <td style="width:150px;">S.no</td>
+                    <td style="width:300px"> Subject Name</td>
+                    <td style="width:200px;">Max</td>
+                    <td style="width:200px;">Obtained</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>${sub1}</td>
+                    <td>100</td>
+                    <td class="fw-bold">${subOne}</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>${sub2}</td>
+                    <td>100</td>
+                    <td class="fw-bold">${subTwo}</td>
+                  </tr>
+
+                   <tr>
+                    <td>3</td>
+                    <td>${sub3}</td>
+                    <td>100</td>
+                  <td class="bf-bood">${subThree}</td>
+                  </tr>
+                    <tr>
+                    <td colspan=2>Total Marks</td>
+                    <td  colspan=2>300</td>
+                  </tr>
+                  <tr>
+                    <td colspan=2>Obtained Marks</td>
+                    <td class="fw-bold" colspan=2>${obtainedMarks}</td>
+                  </tr>
+                  <tr>
+                    <td colspan=2>Percentage</td>
+                    <td class="fw-bold" colspan=2>${percentage}</td>
+                  </tr>
+                  <tr>
+                    <td colspan=2>Grade</td>
+                    <td class="fw-bold" colspan=2>${grade}</td>
+                  </tr>
+                 </table>        
+     </div>
+ </div>
+
+ <div class="row">
+     <div class="col col-lg-6 col-md-6 col-sm-6 col-6 mt-5 ms-auto">
+ <img class="img-fluid w-50 mt-5" src="./logo-qr.jpg" alt="">
+     </div>
+     <div class="col col-lg-6 col-md-6 col-sm-6 col-6">
+ <img class="img-fluid border-bottom border-dark w-50 logsign" src="./logo-sign.png" alt="">
+     </div>
+ </div>
+
+<div class="row">
+     <div class="col col-lg-6 col-md-6 col-sm-6 col-6">
+     </div>
+     <div class="col col-lg-6 col-md-6 col-sm-6 col-6 mt-3 text-center">
+      <h3>Signature</h3>
+     </div>
+ </div>
+
+ <div class="row mt-5 text-center">
+     <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
+         <p>This marksheet is generated online</p>
+         <p>more details: http://www.UTM.com</p>
+         <p></p>
+     </div>
+ </div>
+
+ <div class="row">
+     <div class="col col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+     <p></p>
+     </div>
+     </div> -->
+
+                
+             </div>
+         </div>
+     </div>
+
+
 
 
 
